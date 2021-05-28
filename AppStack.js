@@ -1,0 +1,103 @@
+import * as React from 'react'
+import { createStackNavigator } from '@react-navigation/stack'
+import Home from './Home'
+import Sidebar from './Sidebar'
+import Scan from './Scan'
+import Search from './Search'
+import CustomBottomMenu from './CustomBottomMenu'
+import Wishlist from './Wishlist'
+import Profile from './Profile'
+import Property from './Property'
+import Help from './Help'
+import AboutUs from './AboutUs'
+import TermsAndConditions from './TermsAndConditions'
+import Loans from './Loans'
+import AboutBuilders from './AboutBuilders'
+import Furniture from './Furniture'
+import Chairs from './Chairs'
+import InteriorDesign from './InteriorDesign'
+import InteriorDetails from './InteriorDetails'
+import Packages from './Packages'
+import SelectLocation from './SelectLocation'
+import Step0 from './Step0'
+import Step1 from './Step1'
+import Step2 from './Step2'
+import Step3 from './Step3'
+import Step4 from './Step4'
+import Step5 from './Step5'
+import Step6 from './Step6'
+import Step7 from './Step7'
+import Filter from './Filter'
+import Realestate from './Realestate'
+import Villas from './Villas'
+import VillaDetails from './VillaDetails'
+import Notifications from './Notifications'
+import ChangePassword from './ChangePassword'
+import Packers from './Packers'
+import PackersDetails from './PackersDetails'
+import ConstructionMaterials from './ConstructionMaterials'
+import ConstructionDetails from './ConstructionDetails'
+import Services from './Services'
+import ServicesDetails from './ServicesDetails'
+import Mypackages from './Mypackages'
+import MapWithMarker from './MapWithMarker'
+import MainNavigator from './MainNavigator'
+import ManageProperties from './ManageProperties'
+import Enquiry from './Enquiry'
+import YearPicker from './YearPicker';
+import Maintinace from './Maintinace'
+import PropertyImages from './PropertyImages'
+const Stack = createStackNavigator()
+export default function AppStack() {
+    return (
+        <Stack.Navigator headerMode="none">
+            <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="MainNavigator" component={MainNavigator} />
+            <Stack.Screen name="Sidebar" component={Sidebar} />
+            <Stack.Screen name="CustomBottomMenu" component={CustomBottomMenu} />
+            <Stack.Screen name="Scan" component={Scan} />
+            <Stack.Screen name="Search" component={Search} />
+            <Stack.Screen name="Wishlist" component={Wishlist} />
+            <Stack.Screen name="Profile" component={Profile} />
+            <Stack.Screen name="Property" component={Property} />
+            <Stack.Screen name="Help" component={Help} />
+            <Stack.Screen name="AboutUs" component={AboutUs} />
+            <Stack.Screen name="TermsAndConditions" component={TermsAndConditions} />
+            <Stack.Screen name="Loans" component={Loans} />
+            <Stack.Screen name="AboutBuilders" component={AboutBuilders} />
+            <Stack.Screen name="Furniture" component={Furniture} />
+            <Stack.Screen name="Chairs" component={Chairs} />
+            <Stack.Screen name="InteriorDesign" component={InteriorDesign} />
+            <Stack.Screen name="InteriorDetails" component={InteriorDetails} />
+            <Stack.Screen name="Packages" component={Packages} />
+            <Stack.Screen name="SelectLocation" component={SelectLocation} />
+            <Stack.Screen name="Step0" component={Step0} />
+            <Stack.Screen name="Step1" component={Step1} />
+            <Stack.Screen name="Step2" component={Step2} />
+            <Stack.Screen name="Step3" component={Step3} />
+            <Stack.Screen name="Step4" component={Step4} />
+            <Stack.Screen name="Step5" component={Step5} />
+            <Stack.Screen name="Step6" component={Step6} />
+            <Stack.Screen name="Step7" component={Step7} />
+            <Stack.Screen name="Filter" component={Filter} />
+            <Stack.Screen name="Realestate" component={Realestate} />
+            <Stack.Screen name="Villas" component={Villas} />
+            <Stack.Screen name="VillaDetails" component={VillaDetails} />
+            <Stack.Screen name="Notifications" component={Notifications} />
+            <Stack.Screen name="ChangePassword" component={ChangePassword} />
+            <Stack.Screen name="Packers" component={Packers} />
+            <Stack.Screen name="PackersDetails" component={PackersDetails} />
+            <Stack.Screen name="ConstructionMaterials" component={ConstructionMaterials} />
+            <Stack.Screen name="ConstructionDetails" component={ConstructionDetails} />
+            <Stack.Screen name="Services" component={Services} />
+            <Stack.Screen name="ServicesDetails" component={ServicesDetails} />
+            <Stack.Screen name="Mypackages" component={Mypackages} />
+            <Stack.Screen name="MapWithMarker" component={MapWithMarker} />
+            <Stack.Screen name="ManageProperties" component={ManageProperties} />
+            <Stack.Screen name="Enquiry" component={Enquiry} />
+            <Stack.Screen name="YearPicker" component={YearPicker} />
+            <Stack.Screen name="Maintinace" component={Maintinace} />
+            <Stack.Screen name="PropertyImages" component={PropertyImages} />
+        </Stack.Navigator>
+    )
+}
